@@ -25,9 +25,11 @@
 
         <activity
             android:name="com.example.kotlinsample.BmiKotlinActivity"
+            android:theme="@style/Theme.AppCompat.Light"
             android:label="com.example.kotlinsample.BmiKotlinActivity" />
         <activity
             android:name="com.example.kotlinsample.BmiJavaActivity"
+            android:theme="@style/Theme.AppCompat.Light"
             android:label="com.example.kotlinsample.BmiJavaActivity" />
     </application>
 

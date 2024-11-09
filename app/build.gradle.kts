@@ -64,19 +64,15 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation("androidx.compose.ui:ui:1.5.0") // Compose UI
-    implementation("androidx.compose.material3:material3:1.0.1") // Material3
-    implementation("androidx.compose.ui:ui-tooling-preview:1.5.0") // UI Tooling
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4") // ConstraintLayout 의존성
-    implementation("androidx.core:core-ktx:1.12.0") // Core KTX
-    implementation("androidx.activity:activity-compose:1.7.0")
+    implementation(platform(libs.androidx.compose.bom)) // Compose BOM
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.activity:activity-compose")
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity) // Activity Compose
 
     // 테스트 의존성
     testImplementation(libs.junit)
