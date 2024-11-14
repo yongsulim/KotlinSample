@@ -73,6 +73,7 @@ dependencies {
     implementation("androidx.activity:activity-compose")
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.activity)
 
     // 테스트 의존성
     testImplementation(libs.junit)
