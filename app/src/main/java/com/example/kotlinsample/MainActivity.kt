@@ -25,5 +25,14 @@ class MainActivity : ComponentActivity() {
         binding.button2.setOnClickListener {
             startActivity(Intent(this@MainActivity, BmiKotlinActivity::class.java))
         }
+
+        binding.button3.setOnClickListener {
+            // Intent 로 VariableJavaActivity를 타겟으로 지정하고 startActivity로 실행
+            startActivity(Intent(this@MainActivity, VariableJavaActivity::class.java))
+        }
+        binding.button4.setOnClickListener {
+            // Intent 로 VariableKotlinActivity를 타겟으로 지정하고 startActivity로 실행
+            startActivity(Intent(this@MainActivity, VariableKotlinActivity::class.java))
+        }
     }
 }
