@@ -16,10 +16,12 @@
         <activity
             android:name=".ControlKotlinActivity"
             android:label="ControlKorlin"
+            android:theme="@style/AppTheme"
             android:exported="false" />
         <activity
             android:name=".ControlJavaActivity"
             android:label="ControlJava"
+            android:theme="@style/AppTheme"
             android:exported="false" />
         <activity
             android:name=".VariableKotlinActivity"

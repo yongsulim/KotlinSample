@@ -36,11 +36,11 @@ class MainActivity : ComponentActivity() {
         }
         binding.button5.setOnClickListener {
             // Intent 로 VariableKotlinActivity를 타겟으로 지정하고 startActivity로 실행
-            startActivity(Intent(this@MainActivity, VariableKotlinActivity::class.java))
+            startActivity(Intent(this@MainActivity, ControlJavaActivity::class.java))
         }
         binding.button6.setOnClickListener {
             // Intent 로 VariableKotlinActivity를 타겟으로 지정하고 startActivity로 실행
-            startActivity(Intent(this@MainActivity, VariableKotlinActivity::class.java))
+            startActivity(Intent(this@MainActivity, ControlKotlinActivity::class.java))
         }
     }
 }
