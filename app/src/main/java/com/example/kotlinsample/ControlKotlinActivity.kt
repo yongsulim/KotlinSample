@@ -24,9 +24,9 @@ class ControlKotlinActivity : AppCompatActivity() {
 
             // when 문은 케이스로 조건식도 사용 가능
             when {
-                number % 2 == 0 -> Toast.makeText(applicationContext, "${number} 는 2의 배수입니다", Toast.LENGTH_SHORT).show()
-                number % 3 == 0 -> Toast.makeText(applicationContext, "${number} 는 3의 배수입니다", Toast.LENGTH_SHORT).show()
-                else -> Toast.makeText(applicationContext, "${number}", Toast.LENGTH_SHORT).show()
+                number % 2 == 0 -> toastShort("${number} 는 2의 배수입니다.")
+                number % 3 == 0 -> toastShort("${number} 는 3의 배수입니다.")
+                else -> toastShort("${number}")
             }
 
             // 코틀린에서는 switch문을 대체해 when을 사용할 수 있다
